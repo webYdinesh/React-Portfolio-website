@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400;1,500;1,600&display=swap');
+
+.top-nav {
+    justify-content: space-between;
+    padding: .5rem 5rem;
+}
+
+.logo {
+    flex-direction: column;
+}
+
+.top-nav h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3rem;
+}
+
+.top-nav h4 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.theme-icon {
+    position: relative;
+}
+
+.theme-icon button {
+    background-color: transparent;
+}
+
+.toggle-theme-model {
+    width: 50px;
+    height: 0px;
+    background-color: rgb(255 255 255 / 27%);
+    border: 1px solid #ffffff63;
+    backdrop-filter: blur(25px);
+    border-radius: .7rem;
+    position: absolute;
+    left: -6px;
+    top: 50px;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.toggle-icon {
+    fill: var(--color-primary);
+}
+
+.blue-theme {
+    --box-shadow: #00b4d8ba;
+    --hero-bg-color: #00b4d8;
+    --color-primary: #00b4d8;
+    --color-secondary: #84ebff;
+    --bg-light: #cdf7ff;
+}
+
+.yellow-theme {
+    --box-shadow: #ffc300ba;
+    --hero-bg-color: #ffc300;
+    --color-primary: #ffc300;
+    --color-secondary: #ffe669;
+    --bg-light: #fffce1;
+}
+
+.red-theme {
+    --box-shadow: #d90429ba;
+    --hero-bg-color: #d90429;
+    --color-primary: #d90429;
+    --color-secondary: #ff4f64;
+    --bg-light: #ffd0d5;
+}
+
+
+@media screen and (max-width:450px) {
+    .top-nav {
+        padding: 0.5rem 1rem;
+    }
+}

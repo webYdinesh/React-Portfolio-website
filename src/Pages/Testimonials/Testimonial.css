@@ -1,0 +1,55 @@
+.testimonial-title {
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.testimonial-title h3 {
+    color: var(--color-primary);
+}
+
+.mockup-container{
+    padding: 8rem 2rem;
+    position: relative;
+}
+.mockup-inner-box{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    background-color: var(--color-primary);
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-slider-container{
+    padding: 10rem 2rem;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1250px) {
+    .mockup-group {
+        gap: 2rem;
+}
+.mockup-group {
+    width: 100%;
+}
+}
+@media screen and (max-width:650px) {
+    .mockup-group {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mockup-group img {
+ height: auto;
+    }
+    .mockup-inner-box {
+        transform: translate(-50%, -50%) scaleY(1.5);
+    }
+    .card-module {
+        width: 95%;
+    }
+}

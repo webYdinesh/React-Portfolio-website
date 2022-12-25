@@ -1,0 +1,111 @@
+.contact-title {
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.contact-title h3 {
+    color: var(--color-primary);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 2rem;
+}
+
+.contact-grid h4 {
+    text-align: center;
+    line-height: 7;
+}
+
+.contact-card-container {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form {
+    width: 100%;
+    padding: 2rem 8rem;
+}
+
+.form-contact input {
+    width: 100%;
+    height: 5rem;
+    margin: 2rem 0rem;
+    font-size: 1.7rem;
+    color: #000;
+    padding: 0rem 1.5rem;
+    border-radius: .7rem;
+    caret-color: var(--color-primary);
+    background-color: var(--bg-light);
+}
+
+.form-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+#message {
+    margin: 2rem 0rem;
+    border-radius: .7rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    color: #000;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 2rem 1.5rem;
+    caret-color: var(--color-primary);
+    background-color: var(--bg-light);
+
+}
+
+.form-contact input::placeholder {
+    caret-color: var(--color-primary);
+}
+
+#submit {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    gap: .8rem;
+    transition: all 300ms linear;
+    box-shadow: 0px 9px 8px -5px var(--box-shadow);
+}
+
+#submit:hover {
+    transform: translateY(-5px);
+
+}
+
+#submit:hover {
+    background-color: transparent;
+}
+
+#submit:active {
+    transform: scale(.93);
+}
+
+@media screen and (max-width:1250px) {
+    form {
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width:850px) {
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5rem 9rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5rem 0rem;
+    }
+}

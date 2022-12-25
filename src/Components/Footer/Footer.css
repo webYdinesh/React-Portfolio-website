@@ -1,0 +1,28 @@
+.footer{
+    height: 15vh;
+    padding: 2rem 2rem;
+    background-color: var(--color-secondary);
+}
+
+.outro-text {
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.outro-text h4 {
+    color: var(--color-primary);
+    font-weight: 600;
+    stroke: aquamarine;
+}
+
+.outro-text h6 {
+    color:  #fff;
+    font-weight: 500;
+
+   
+}
+
+
+.outro-text span{
+    line-height: 3;
+}

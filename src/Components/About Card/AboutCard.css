@@ -1,0 +1,25 @@
+.about-card {
+    width: 190px;
+    flex-direction: column;
+    gap: .6rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    padding: 2.5rem 5rem;
+    border-radius: .7rem;
+    transform-origin: center;
+    transition: all 400ms linear;
+}
+
+.about-card h5 {
+    font-size: 1.8rem;
+}
+
+.about-card p {
+    font-weight: 600;
+}
+
+.about-card:hover {
+    background-color: transparent;
+
+    border: 2px solid var(--color-primary);
+}

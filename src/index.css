@@ -1,0 +1,125 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #ff4482;
+  --color-secondary: #ffa2d4;
+  --color-bg: rgba(53, 0, 18, 0.911);
+  --box-shadow: #ff4482ba;
+  --hero-bg-color: rgba(255, 68, 130, 1);
+  --bg-light: #ffdae6;
+  --container-size-lg: 80%;
+  --container-size-md: 90%;
+  --container-size-sm: 95%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, var(--color-bg), var(--color-bg)), url("./Images/texture-bg.png");
+  user-select: none;
+}
+
+.container {
+  width: var(--container-size-lg);
+  margin: 0rem auto;
+  padding: 0rem 10rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.3rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+
+#about,
+#home,
+#contact,
+#projects,
+#testimonials {
+  min-height: 100vh;
+}
+
+@media screen and (max-width:1250px) {
+  .container {
+    width: var(--container-size-md);
+    padding: 0rem;
+  }
+
+  header {
+    left: -55px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .container {
+    width: var(--container-size-sm);
+  }
+
+  header {
+    display: none;
+  }
+}

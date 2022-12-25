@@ -1,0 +1,38 @@
+.project-title {
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.project-title h3 {
+    color: var(--color-primary);
+}
+
+.project-container {
+    padding: 3rem 2rem;
+}
+
+@media screen and (max-width:850px) {
+    .project-card {
+        grid-template-columns: 1fr;
+        gap: 0%;
+    }
+
+    .animated-card {
+        padding: 1.5rem 0rem;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    .animated {
+        padding: 5rem .5rem;
+        flex-wrap: wrap;
+    }
+
+    .project-container {
+        padding: 0rem 2rem 10rem 2rem;
+    }
+
+}
