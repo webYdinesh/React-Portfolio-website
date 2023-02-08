@@ -26,7 +26,7 @@ const Slider = () => {
         {CardData.map((ele,i) => {
           return (
             <SwiperSlide key={i}>
-              <ProjectCard  img={ele.image} title={ele.heading} description={ele.des} icon1={ele.icon1} icon2={ele.icon2} icon3={ele.icon3} icon4={ele.icon4} link={ele.previewLink} githubLink={ele.githubLink}/>
+              <ProjectCard  img={ele.image} title={ele.heading} description={ele.des} icon1={ele.icon1} icon2={ele.icon2} icon3={ele.icon3} icon4={ele.icon4} link={ele.previewLink} />
             </SwiperSlide>
           );
         })}
