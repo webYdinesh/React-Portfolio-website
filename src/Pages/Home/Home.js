@@ -4,6 +4,7 @@ import TopNav from "../../Components/TopNav/TopNav";
 import { IoMdGitNetwork } from "react-icons/io";
 import { TbMessageCode } from "react-icons/tb";
 import heroImg from '../../Images/profile.png'
+import File from "../../appointment.pdf"
 import "./Home.css";
 
 const Home = () => {
@@ -49,8 +50,9 @@ const Home = () => {
               initial={{ x: -30, opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ x: 0, opacity: 1 }}
-              href="#projects"
+              href="File"
               className="flex"
+download
             >
               My Work <IoMdGitNetwork />
             </motion.a>
