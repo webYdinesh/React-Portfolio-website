@@ -52,7 +52,7 @@ const Home = () => {
               whileInView={{ x: 0, opacity: 1 }}
               href="../../appointment.pdf"
               className="flex"
-download
+download="../../appointment.pdf"
             >
               My Work <IoMdGitNetwork />
             </motion.a>
