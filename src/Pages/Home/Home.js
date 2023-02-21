@@ -50,7 +50,7 @@ const Home = () => {
               initial={{ x: -30, opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ x: 0, opacity: 1 }}
-              href="File"
+              href="../../appointment.pdf"
               className="flex"
 download
             >
